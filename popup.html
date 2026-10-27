@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; object-src 'none'; base-uri 'none'; script-src 'self'; style-src 'self'; img-src 'self'">
+  <title>AI Master | Google Flow</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="masthead">
+      <a class="brand-home" href="https://www.youtube.com/@aimasteriran" target="_blank" rel="noopener noreferrer" aria-label="بازکردن کانال فارسی AI Master">
+        <img class="brand-mark" src="assets/logo.jpg" width="56" height="56" alt="">
+        <span class="brand-copy">
+          <strong>AI Master</strong>
+          <span>کانال فارسی ↗</span>
+        </span>
+      </a>
+      <a class="channel-en" href="https://www.youtube.com/@ai-mr-en" target="_blank" rel="noopener noreferrer" aria-label="بازکردن کانال انگلیسی AI Master" lang="en" dir="ltr">English <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <section class="control" aria-labelledby="control-title">
+      <div class="control-top">
+        <div>
+          <h2 id="control-title">دستیار Flow</h2>
+          <p>مدیریت دستیار در مرورگر شما</p>
+        </div>
+        <button id="toggle" class="switch" type="button" role="switch" aria-label="فعال‌کردن دستیار Flow" aria-checked="false" disabled><span></span></button>
+      </div>
+      <div id="status" class="status" role="status" data-tone="idle">
+        <span class="status-indicator" aria-hidden="true"></span>
+        <span id="status-text">در حال بررسی وضعیت…</span>
+      </div>
+      <p id="diagnostic" class="diagnostic" hidden></p>
+      <button id="check-country" class="age-action" type="button" hidden>بررسی کشور حساب در Google <span aria-hidden="true">↗</span></button>
+    </section>
+
+    <section class="age-card" aria-labelledby="age-title">
+      <div class="age-copy">
+        <span id="age-icon" class="age-icon" aria-hidden="true">?</span>
+        <div>
+          <h2 id="age-title">تأیید سن Google</h2>
+          <p id="age-status" role="status">در حال بررسی…</p>
+        </div>
+      </div>
+      <button id="verify-age" class="age-action" type="button" hidden>بررسی یا تأیید سن در Google <span aria-hidden="true">↗</span></button>
+    </section>
+
+    <div class="actions">
+      <button id="open" class="button button-primary" type="button">ورود به Google Flow <span aria-hidden="true">↗</span></button>
+      <button id="reload" class="button button-secondary" type="button" hidden>بارگذاری دوبارهٔ تب</button>
+    </div>
+
+    <p id="error" class="error" role="alert"></p>
+    <footer>
+      <p class="footnote">تغییر وضعیت برای تب‌های باز، پس از بارگذاری دوباره اعمال می‌شود.</p>
+      <div class="creator">
+        <span>با <strong>AI Master</strong> همراه شوید</span>
+        <a href="https://www.youtube.com/@aimasteriran" target="_blank" rel="noopener noreferrer" aria-label="کانال یوتیوب AI Master">@aimasteriran <span aria-hidden="true">↗</span></a>
+      </div>
+    </footer>
+  </main>
+  <script src="age-page.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
